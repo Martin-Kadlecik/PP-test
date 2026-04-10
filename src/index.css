@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #EEE9DF;
+  --color-surface-soft: #F4EFE7;
+  --color-surface-muted: #C9C1B1;
+  --color-ink-primary: #1B2632;
+  --color-ink-secondary: #2C3B4D;
+  --color-accent-primary: #FFB162;
+  --color-accent-secondary: #A35139;
+
+  --font-headline: "Barlow Semi Condensed", sans-serif;
+  --font-body: "Barlow", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-canvas text-ink-primary font-body selection:bg-accent-primary selection:text-ink-primary;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
